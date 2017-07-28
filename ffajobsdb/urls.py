@@ -17,6 +17,6 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-   url(r'^jodsdb/', include('jobsdb.urls')),
+   url(r'^jobsdb/', include('jobsdb.urls')),
    url(r'^admin/', admin.site.urls),
 ]
