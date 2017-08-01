@@ -11,6 +11,7 @@ class Location(models.Model):
         return self.location_name
    
 class Connection(models.Model):
+    base= models.CharField(max_length=200)	
     location = models.ForeignKey(Location)
     ip = models.CharField(max_length=200)
     port = models.IntegerField(default=0)
